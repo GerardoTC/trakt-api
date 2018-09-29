@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D688C11515294DE3F62543D /* Pods_TraktTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD6E6F17F56B6B57BEA7B85 /* Pods_TraktTests.framework */; };
 		9A2B4E90215FAFD500E9F705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B4E8F215FAFD500E9F705 /* AppDelegate.swift */; };
 		9A2B4E92215FAFD500E9F705 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B4E91215FAFD500E9F705 /* ViewController.swift */; };
 		9A2B4E95215FAFD500E9F705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2B4E93215FAFD500E9F705 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9A2B4E9A215FAFD600E9F705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2B4E99215FAFD600E9F705 /* Assets.xcassets */; };
 		9A2B4E9D215FAFD600E9F705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2B4E9B215FAFD600E9F705 /* LaunchScreen.storyboard */; };
 		9A2B4EA8215FAFD600E9F705 /* TraktTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B4EA7215FAFD600E9F705 /* TraktTests.swift */; };
+		EB65FACAABC3E3B99DA72D1C /* Pods_Trakt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3A8157AE866EFEC6CDD2A /* Pods_Trakt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2029A0FB438B529E3614A121 /* Pods-TraktTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraktTests/Pods-TraktTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68AFEFE40B0747D426229BB1 /* Pods-Trakt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt/Pods-Trakt.release.xcconfig"; sourceTree = "<group>"; };
+		89F3A8157AE866EFEC6CDD2A /* Pods_Trakt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trakt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BD7DBC7B7F7607FAA28EC4 /* Pods-TraktTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraktTests/Pods-TraktTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A2B4E8C215FAFD500E9F705 /* Trakt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trakt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2B4E8F215FAFD500E9F705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A2B4E91215FAFD500E9F705 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		9A2B4EA3215FAFD600E9F705 /* TraktTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraktTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2B4EA7215FAFD600E9F705 /* TraktTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraktTests.swift; sourceTree = "<group>"; };
 		9A2B4EA9215FAFD600E9F705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97B415D14816FFC6B08AECB /* Pods-Trakt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt/Pods-Trakt.debug.xcconfig"; sourceTree = "<group>"; };
+		CBD6E6F17F56B6B57BEA7B85 /* Pods_TraktTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB65FACAABC3E3B99DA72D1C /* Pods_Trakt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D688C11515294DE3F62543D /* Pods_TraktTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2864A77033B7D10CB1E0D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F3A8157AE866EFEC6CDD2A /* Pods_Trakt.framework */,
+				CBD6E6F17F56B6B57BEA7B85 /* Pods_TraktTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A2B4E83215FAFD500E9F705 = {
 			isa = PBXGroup;
 			children = (
 				9A2B4E8E215FAFD500E9F705 /* Trakt */,
 				9A2B4EA6215FAFD600E9F705 /* TraktTests */,
 				9A2B4E8D215FAFD500E9F705 /* Products */,
+				AC94D08891FE3F51A3AB26D5 /* Pods */,
+				2A2864A77033B7D10CB1E0D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,17 @@
 			path = TraktTests;
 			sourceTree = "<group>";
 		};
+		AC94D08891FE3F51A3AB26D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A97B415D14816FFC6B08AECB /* Pods-Trakt.debug.xcconfig */,
+				68AFEFE40B0747D426229BB1 /* Pods-Trakt.release.xcconfig */,
+				2029A0FB438B529E3614A121 /* Pods-TraktTests.debug.xcconfig */,
+				99BD7DBC7B7F7607FAA28EC4 /* Pods-TraktTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2B4EAC215FAFD600E9F705 /* Build configuration list for PBXNativeTarget "Trakt" */;
 			buildPhases = (
+				3F8A34AD00D322408618660F /* [CP] Check Pods Manifest.lock */,
 				9A2B4E88215FAFD500E9F705 /* Sources */,
 				9A2B4E89215FAFD500E9F705 /* Frameworks */,
 				9A2B4E8A215FAFD500E9F705 /* Resources */,
+				0CE9097A8B86CB71116D14B1 /* [CP] Embed Pods Frameworks */,
+				379B002BEF908C44F8592FFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2B4EAF215FAFD600E9F705 /* Build configuration list for PBXNativeTarget "TraktTests" */;
 			buildPhases = (
+				9D6DE843A2B703F7DFA2D2C2 /* [CP] Check Pods Manifest.lock */,
 				9A2B4E9F215FAFD600E9F705 /* Sources */,
 				9A2B4EA0215FAFD600E9F705 /* Frameworks */,
 				9A2B4EA1215FAFD600E9F705 /* Resources */,
+				F39F3BF744EF7E53460F6A53 /* [CP] Embed Pods Frameworks */,
+				A44EE78929F83D739B1BA5D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +232,105 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE9097A8B86CB71116D14B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trakt/Pods-Trakt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		379B002BEF908C44F8592FFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trakt/Pods-Trakt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F8A34AD00D322408618660F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trakt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6DE843A2B703F7DFA2D2C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TraktTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44EE78929F83D739B1BA5D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TraktTests/Pods-TraktTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39F3BF744EF7E53460F6A53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TraktTests/Pods-TraktTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A2B4E88215FAFD500E9F705 /* Sources */ = {
@@ -360,15 +497,13 @@
 		};
 		9A2B4EAD215FAFD600E9F705 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97B415D14816FFC6B08AECB /* Pods-Trakt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = Trakt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.Trakt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -378,15 +513,13 @@
 		};
 		9A2B4EAE215FAFD600E9F705 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AFEFE40B0747D426229BB1 /* Pods-Trakt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = Trakt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.Trakt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -396,17 +529,14 @@
 		};
 		9A2B4EB0215FAFD600E9F705 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2029A0FB438B529E3614A121 /* Pods-TraktTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = TraktTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.TraktTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -417,17 +547,14 @@
 		};
 		9A2B4EB1215FAFD600E9F705 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99BD7DBC7B7F7607FAA28EC4 /* Pods-TraktTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = TraktTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.TraktTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
