@@ -6,7 +6,7 @@ target 'Trakt' do
   use_frameworks!
 
   # Pods for Trakt
-
+  pod 'ImageLoader'
   target 'TraktTests' do
     inherit! :search_paths
     # Pods for testing
