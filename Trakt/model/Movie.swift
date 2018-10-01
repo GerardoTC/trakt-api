@@ -9,7 +9,7 @@
 import Foundation
 struct Movie: Codable {
     let title: String
-    let year: Int
+    let year: Int32
     let ids: MovieIds
     
     enum movieKeys: String,CodingKey {
@@ -21,10 +21,10 @@ struct Movie: Codable {
 
 
 struct MovieIds: Codable {
-    let trakt: CLong
+    let trakt: Int32
     let slug: String
     let imdb: String
-    let tmdb: CLong
+    let tmdb: Int32
     
     enum movieIds: String,CodingKey {
         case trakt

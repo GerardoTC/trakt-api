@@ -13,14 +13,27 @@ protocol TopMoviesInteractorDelegate:class {
 
 class TopMoviesInteractor:  TopMoviesInteractorDelegate {
 
-    var presenter: TopMoviesPresenterDelegate?
+    var presenter: TopMoviesPresenterDelegate!
     
     func getMoviesByPage(page: Int) {
-        
+        TopMoviesAPI.shared.getMoviesByPage(page: page) { (movies) in
+            if movies.count != 0{
+                self.presenter.updateListMovies(movies: movies)
+                TopMoviesdb.shared.deleteData()
+                TopMoviesdb.shared.saveMovies(movies: movies)
+            }
+            else {
+                self.fetchInDB()
+            }
+        }
     }
     
     func setPresenter(presenter: TopMoviesPresenterDelegate) {
         self.presenter = presenter
+    }
+    
+    func fetchInDB() {
+        TopMoviesdb.shared.getMovies()
     }
     
 }

@@ -7,22 +7,38 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 
 protocol TopMoviesViewDelegate: class {
-    
+    func showLoadingView()
+    func hideLoadingView()
 }
 
 class ViewController: UIViewController, TopMoviesViewDelegate {
-    var presenter:TopMoviesPresenterDelegate?
+    
+    
+    var presenter:TopMoviesPresenterDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initMVP()
+        presenter.viewDidLoad()
     }
+    
     
     func initMVP() {
         presenter = TopMoviesPresenter(view: self, interactor: TopMoviesInteractor())
+    }
+    
+    func hideLoadingView() {
+        DispatchQueue.main.async {
+            SVProgressHUD.dismiss()
+        }
+    }
+    
+    func showLoadingView() {
+        SVProgressHUD.show()
     }
 }
 

@@ -8,17 +8,33 @@
 
 import Foundation
 protocol TopMoviesPresenterDelegate: class {
-
+    func viewDidLoad()
+    func updateListMovies(movies:Array<Movie>)
 }
 
 class TopMoviesPresenter:  TopMoviesPresenterDelegate {
-    var view:TopMoviesViewDelegate?
-    var interactor:TopMoviesInteractorDelegate?
+    
+    var view:TopMoviesViewDelegate!
+    var interactor:TopMoviesInteractorDelegate!
+    var page:Int
+    var movies: Array<Movie>
     
     init(view: TopMoviesViewDelegate, interactor: TopMoviesInteractorDelegate) {
+        self.page = 1
+        self.movies = []
         self.view = view
         self.interactor = interactor
         interactor.setPresenter(presenter: self)
+        
     }
     
+    func viewDidLoad() {
+        view.showLoadingView()
+        interactor.getMoviesByPage(page: page)
+    }
+    
+    func updateListMovies(movies: Array<Movie>) {
+        self.movies += movies
+        view.hideLoadingView()
+    }
 }

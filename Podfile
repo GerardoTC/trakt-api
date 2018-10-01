@@ -7,6 +7,8 @@ target 'Trakt' do
 
   # Pods for Trakt
   pod 'ImageLoader'
+  pod 'SVProgressHUD'
+  
   target 'TraktTests' do
     inherit! :search_paths
     # Pods for testing
