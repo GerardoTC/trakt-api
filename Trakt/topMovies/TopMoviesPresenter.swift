@@ -18,6 +18,7 @@ protocol TopMoviesPresenterDelegate: class {
     func cellForRowAt(indexPath:IndexPath, cell: CellTopMovies) -> UITableViewCell
     func handleRefresh()
     func searchUpdated(value:String)
+    func didSelectRowAt(path:IndexPath)
     
 }
 
@@ -70,17 +71,22 @@ class TopMoviesPresenter:  TopMoviesPresenterDelegate {
         return cell
     }
     func handleRefresh() {
-        page = 1
-        movies = []
+        restartInfo()
         view.showLoadingView()
         interactor.getMoviesByPage(page: page,query: "")
     }
     func searchUpdated(value: String) {
         query = "&query=" + value
+        restartInfo()
+        view.showLoadingView()
+        interactor.getMoviesByPage(page: page, query: query)
+    }
+    func restartInfo() {
         page = 1
         movies = []
         view.reloadTable()
-        interactor.getMoviesByPage(page: page, query: query)
-        view.showLoadingView()
+    }
+    func didSelectRowAt(path: IndexPath) {
+        view.showDetail(movieSelected: movies[path.item])
     }
 }

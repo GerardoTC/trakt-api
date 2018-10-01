@@ -22,6 +22,7 @@
 		9A96D625216185ED00F918A8 /* TopMoviesdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96D624216185ED00F918A8 /* TopMoviesdb.swift */; };
 		9A96D6272161860800F918A8 /* TopMoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96D6262161860800F918A8 /* TopMoviesAPI.swift */; };
 		9AC673732161CBF4004510E5 /* CellTopMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC673722161CBF4004510E5 /* CellTopMovies.swift */; };
+		9AC673762161EFA7004510E5 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC673752161EFA7004510E5 /* MovieDetail.swift */; };
 		EB65FACAABC3E3B99DA72D1C /* Pods_Trakt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3A8157AE866EFEC6CDD2A /* Pods_Trakt.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		9A96D624216185ED00F918A8 /* TopMoviesdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesdb.swift; sourceTree = "<group>"; };
 		9A96D6262161860800F918A8 /* TopMoviesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesAPI.swift; sourceTree = "<group>"; };
 		9AC673722161CBF4004510E5 /* CellTopMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTopMovies.swift; sourceTree = "<group>"; };
+		9AC673752161EFA7004510E5 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		A97B415D14816FFC6B08AECB /* Pods-Trakt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt/Pods-Trakt.debug.xcconfig"; sourceTree = "<group>"; };
 		CBD6E6F17F56B6B57BEA7B85 /* Pods_TraktTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 		9A2B4E8E215FAFD500E9F705 /* Trakt */ = {
 			isa = PBXGroup;
 			children = (
+				9AC673742161EF82004510E5 /* detail */,
 				9A96D6232161852D00F918A8 /* repository */,
 				9A96D61E216183E700F918A8 /* topMovies */,
 				9A2B4E8F215FAFD500E9F705 /* AppDelegate.swift */,
@@ -163,6 +166,14 @@
 				9A96D6262161860800F918A8 /* TopMoviesAPI.swift */,
 			);
 			path = repository;
+			sourceTree = "<group>";
+		};
+		9AC673742161EF82004510E5 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				9AC673752161EFA7004510E5 /* MovieDetail.swift */,
+			);
+			path = detail;
 			sourceTree = "<group>";
 		};
 		AC94D08891FE3F51A3AB26D5 /* Pods */ = {
@@ -397,6 +408,7 @@
 				9A2B4E98215FAFD500E9F705 /* Trakt.xcdatamodeld in Sources */,
 				9AC673732161CBF4004510E5 /* CellTopMovies.swift in Sources */,
 				9A96D6222161842D00F918A8 /* TopMoviesPresenter.swift in Sources */,
+				9AC673762161EFA7004510E5 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

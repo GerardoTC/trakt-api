@@ -24,7 +24,12 @@ class TopMoviesAPI {
         { (data,response,error) in
             if error == nil {
                 let movies = try? JSONDecoder().decode([Movie].self, from: data!)
-                completion(movies!)
+                if movies != nil{
+                    completion(movies!)
+                }
+                else{
+                    completion([])
+                }
             }else {
                 completion([])
             }

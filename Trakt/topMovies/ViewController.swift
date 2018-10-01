@@ -15,11 +15,10 @@ protocol TopMoviesViewDelegate: class {
     func hideLoadingView()
     func showAlertNoMoviesFound()
     func reloadTable()
+    func showDetail(movieSelected: Movie)
 }
 
 class ViewController: UIViewController,    UITableViewDelegate,UITableViewDataSource,TopMoviesViewDelegate, UISearchResultsUpdating {
-    
-    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -100,6 +99,20 @@ extension ViewController {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        presenter.didSelectRowAt(path:indexPath)
+    }
+    
+    func showDetail(movieSelected: Movie) {
+        let detailViewController = self.storyboard?
+            .instantiateViewController(withIdentifier:
+                "MovieDetail") as? MovieDetail
+        detailViewController?.movie = movieSelected
+        self.navigationController?.pushViewController(detailViewController!,
+                                                      animated: true)
     }
 }
 extension ViewController {
