@@ -7,7 +7,7 @@
 //
 
 protocol TopMoviesInteractorDelegate:class {
-    func getMoviesByPage(page:Int)
+    func getMoviesByPage(page: Int,query: String)
     func setPresenter(presenter:TopMoviesPresenterDelegate)
 }
 
@@ -15,8 +15,21 @@ class TopMoviesInteractor:  TopMoviesInteractorDelegate {
 
     var presenter: TopMoviesPresenterDelegate!
     
-    func getMoviesByPage(page: Int) {
-        TopMoviesAPI.shared.getMoviesByPage(page: page) { (movies) in
+    func getMoviesByPage(page: Int,query: String) {
+        if TopMoviesAPI.shared.currentTask != nil {
+            TopMoviesAPI.shared.currentTask.cancel()
+        }
+        
+        TopMoviesAPI.shared.getMoviesByPage(page: page,query: query) { (movies) in
+            if movies.count != 0{
+                self.presenter.updateListMovies(movies: movies)
+            }
+            
+        }
+    }
+    
+    func getTopMovies() {
+        TopMoviesAPI.shared.getMoviesByPage(page: 1, query: "") { (movies) in
             if movies.count != 0{
                 self.presenter.updateListMovies(movies: movies)
                 TopMoviesdb.shared.deleteData()
@@ -33,7 +46,14 @@ class TopMoviesInteractor:  TopMoviesInteractorDelegate {
     }
     
     func fetchInDB() {
-        TopMoviesdb.shared.getMovies()
+        let movies = TopMoviesdb.shared.getMovies()
+        if movies.count > 0 {
+            self.presenter.updateListMovies(movies: movies)
+        }
+        else {
+            self.presenter.moviesNotFound()
+        }
     }
+    
     
 }

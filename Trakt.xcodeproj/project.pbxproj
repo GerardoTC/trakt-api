@@ -21,6 +21,7 @@
 		9A96D6222161842D00F918A8 /* TopMoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96D6212161842D00F918A8 /* TopMoviesPresenter.swift */; };
 		9A96D625216185ED00F918A8 /* TopMoviesdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96D624216185ED00F918A8 /* TopMoviesdb.swift */; };
 		9A96D6272161860800F918A8 /* TopMoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96D6262161860800F918A8 /* TopMoviesAPI.swift */; };
+		9AC673732161CBF4004510E5 /* CellTopMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC673722161CBF4004510E5 /* CellTopMovies.swift */; };
 		EB65FACAABC3E3B99DA72D1C /* Pods_Trakt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3A8157AE866EFEC6CDD2A /* Pods_Trakt.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		9A96D6212161842D00F918A8 /* TopMoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesPresenter.swift; sourceTree = "<group>"; };
 		9A96D624216185ED00F918A8 /* TopMoviesdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesdb.swift; sourceTree = "<group>"; };
 		9A96D6262161860800F918A8 /* TopMoviesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesAPI.swift; sourceTree = "<group>"; };
+		9AC673722161CBF4004510E5 /* CellTopMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTopMovies.swift; sourceTree = "<group>"; };
 		A97B415D14816FFC6B08AECB /* Pods-Trakt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt/Pods-Trakt.debug.xcconfig"; sourceTree = "<group>"; };
 		CBD6E6F17F56B6B57BEA7B85 /* Pods_TraktTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,7 +116,6 @@
 			children = (
 				9A96D6232161852D00F918A8 /* repository */,
 				9A96D61E216183E700F918A8 /* topMovies */,
-				9A96D605215FB32900F918A8 /* model */,
 				9A2B4E8F215FAFD500E9F705 /* AppDelegate.swift */,
 				9A2B4E93215FAFD500E9F705 /* Main.storyboard */,
 				9A2B4E99215FAFD600E9F705 /* Assets.xcassets */,
@@ -139,6 +140,7 @@
 			children = (
 				9A96D6122160700D00F918A8 /* Movie.swift */,
 				9A96D61C21610FAF00F918A8 /* Constants.swift */,
+				9AC673722161CBF4004510E5 /* CellTopMovies.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 		9A96D61E216183E700F918A8 /* topMovies */ = {
 			isa = PBXGroup;
 			children = (
+				9A96D605215FB32900F918A8 /* model */,
 				9A2B4E91215FAFD500E9F705 /* ViewController.swift */,
 				9A96D61F2161841700F918A8 /* TopMoviesInteractor.swift */,
 				9A96D6212161842D00F918A8 /* TopMoviesPresenter.swift */,
@@ -392,6 +395,7 @@
 				9A96D6272161860800F918A8 /* TopMoviesAPI.swift in Sources */,
 				9A96D6132160700D00F918A8 /* Movie.swift in Sources */,
 				9A2B4E98215FAFD500E9F705 /* Trakt.xcdatamodeld in Sources */,
+				9AC673732161CBF4004510E5 /* CellTopMovies.swift in Sources */,
 				9A96D6222161842D00F918A8 /* TopMoviesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +561,10 @@
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = Trakt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.Trakt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -574,7 +581,10 @@
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = Trakt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.Trakt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -591,7 +601,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = TraktTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.TraktTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -609,7 +623,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L78LAKEZ9;
 				INFOPLIST_FILE = TraktTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gerardotc.trakt.TraktTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

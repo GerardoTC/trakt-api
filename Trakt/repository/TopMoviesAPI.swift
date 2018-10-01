@@ -11,9 +11,10 @@ import Foundation
 class TopMoviesAPI {
     static let shared = TopMoviesAPI()
     private init() {}
+    var currentTask: URLSessionDataTask!
     
-    func getMoviesByPage(page:Int, completion: @escaping (_ movies:Array<Movie>) -> Void )  {
-        let url = URL(string: baseServerUrl+"?page=\(page)")
+    func getMoviesByPage(page:Int,query:String, completion: @escaping (_ movies:Array<Movie>) -> Void )  {
+        let url = URL(string: baseServerUrl+"?page=\(page)"+query)
         var request = URLRequest(url: url!)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("2", forHTTPHeaderField: "trakt-api-version")
@@ -29,8 +30,10 @@ class TopMoviesAPI {
             }
             
         })
-        
+        currentTask = task
         task.resume()
-      
+    }
+    func getCurrentTask() -> URLSessionDataTask {
+        return currentTask
     }
 }
